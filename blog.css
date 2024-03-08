@@ -1,0 +1,24 @@
+/* header */
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.col{
+       padding: 20px;
+}
+
+p{
+   text-align:justify  ;
+}
+.caja1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .caja2{
+    display: grid;
+    grid: template rows 0.5em,fr 1fr ;
+ }
+
+ /* CONTENIDO */
+ 

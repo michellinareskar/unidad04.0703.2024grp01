@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/2apg.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Document</title>
+</head>
+<body>
+<!--  NAVBAR de BOOSTRAP -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <!--  LOGOTIPO -->
+        <a class="navbar-brand" href="#">UNIVERSITARIO TLV</a>
+        <!-- Botón tres rayas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenedor para los enlaces de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="./2pgn.html" data-bs-toggle="modal"  ">MENÚ  </a>
+                <a class="nav-link" href="./blog.html" data-bs-toggle="modal"  ">BLOG  </a>
+                <a class="nav-link" href="#" data-bs-toggle="modal"  data-bs-target="#SigninModal">LOGIN ➡️ </a>
+                <a class="nav-link" href="#" data-bs-toggle="modal"  data-bs-target="#SignupModal">REGÍSTRATE 👋</a>
+            </div>
+      </div>
+    </div>
+</nav>
+
+
+    <!-- MODAL LOGIN -->
+   <!--MENSAJE QUE SE ABRE CON  EL BOTÓN "INICIAR SESIÓN" -->
+  <div class="modal fade" id="SigninModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+            <!-- TÍTULO -->
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN-INICIO DE SESIÓN</h1>
+                <!--  CERRAR EL MODAL CON UN BOTÓN "X"-->
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!--CUERPO-->
+            <div class="modal-body">
+                <form id="login-form">
+                    <!-- CAJA DE USUARIO -->
+                    <label for="signing-email">Email:</label>
+                    <input id="signing-email" type="email" class="form-control mb-3" placeholder="Email" required>
+                    <!-- CONTRASEÑA -->
+                    <label for="signing-password">Password:</label>
+                    <input id="signing-password" type="password" class="form-control mb-3" placeholder="*********" required>
+                    <!-- BOTÓN -->
+                    <button type="submit" class="btn btn-primary">Login ➡️</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODAL REGISTRO -->
+<div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+            <!-- TÍTULO -->
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">REGÍSTRATE</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!--CUERPO-->
+            <div class="modal-body">
+                <form id="signup-form">
+                    <!-- USUARIO -->
+                    <label for="signup-email">Email:</label>
+                    <input id="signup-email" type="email" class="form-control mb-3" placeholder="Email" required>
+                    <!-- CONTRASEÑA -->
+                    <label for="signup-password">Password:</label>
+                    <input id="signup-password" type="password" class="form-control mb-3" placeholder="contraseña" required>
+                    <!-- BOTÓN -->
+                    <button type="submit" class="btn btn-primary">Regístrate 👋</button>
+                </form>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--  fin de CRUD -->
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group" id="tasks-container">
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
